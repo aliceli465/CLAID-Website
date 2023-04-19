@@ -1,0 +1,28 @@
+/* MAIN NAV BAR */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*if the window is clipped, it will hide content*/ 
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    width: 100%;
+}
+li.nav {
+    float: left;
+}
+li.nav a.nav {
+    display: block;
+    color: rgb(206, 66, 66);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.nav a.nav:hover {
+    background-color: rgb(206, 66, 66);
+    color: white;
+}
+
+/*BODY*/
+body {
+    font-family: Comfortaa;
+}
