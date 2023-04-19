@@ -12,17 +12,49 @@ li.nav {
 }
 li.nav a.nav {
     display: block;
-    color: rgb(206, 66, 66);
+    color: rgb(211, 92, 92);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li.nav a.nav:hover {
-    background-color: rgb(206, 66, 66);
+    background-color: rgb(211, 92, 92);
     color: white;
 }
 
 /*BODY*/
 body {
     font-family: Comfortaa;
+}
+
+h1.maintext {
+    margin-left:150px;
+    color: rgb(211, 92, 92);
+    font-size:50px;
+    margin-top: 230px;
+}
+
+p.maintext {
+    margin-left:150px;
+    margin-top:30px;
+    color: black;
+    line-height:150%;
+}
+
+.mainimg {
+    float:right;
+    width:650px;
+    height:700px;
+    margin: 0 0 0 15px;
+} 
+
+.contactbox {
+    width: 600px;
+    margin-left: 150px;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.25);
+}
+
+.contacttext {
+    margin-top: 100px;
+    padding: 30px 16px;
 }
