@@ -1,0 +1,16 @@
+{
+    "admin": [
+        {
+            "name": "Raymond Lin",
+            "position": "President",
+            "major":"Gender Studies",
+            "from": "Paris, IL",
+            "year": "Junior",
+            "why": "I'm a munch",
+            "hobbies": "terraria",
+            "fact": "i like ice spice",
+            "netid": "ray",
+            "image": "/images/raymond.png"
+        }
+    ]
+}

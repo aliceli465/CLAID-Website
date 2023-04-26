@@ -8,9 +8,12 @@
     <!--comfortaa font-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <!--bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+    <script type="text/javascript" src="/node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="/js/board.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
 <body>
@@ -23,11 +26,42 @@
         <li class="nav"><a class="nav" href="connect.html">Connect</a></li>
     </ul>
     <br/>
-    <h1 class="headers">Executive Board</h1>
+    <h1 class="headers">Executives</h1>
     <h3 class="headers">Click each photo to learn more!</h3>
     <br/>
-    <div class="board_container">
+    <script type="text/x-mustache" id="boardTemplate">
+        {{#admin}}
         <div class="board_div">
+            <img class="board_pic" src="{{image}}" data-toggle="modal" data-target="#{{netid}}">
+            <h3>{{name}}</h3>
+            <p>{{position}}</p>
+        </div>
+
+        <div class="modal fade" id="{{netid}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" style="text-align: center;"id="myModalLabel">Raymond Lin</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="modal_pic" src="/images/icej.jpg">
+                    <p class="modal_question">Major: <span class="modal_answer">{{major}}</span></p>
+                    <p class="modal_question">Year: <span class="modal_answer">{{year}}</span></p>
+                    <p class="modal_question">From: <span class="modal_answer">{{from}}</span></p>
+                    <p class="modal_question">Why CLAID: <span class="modal_answer">{{why}}</span></p>
+                    <p class="modal_question">Hobbies: <span class="modal_answer">{{hobbies}}</span></p>
+                    <p class="modal_question">Fun fact: <span class="modal_answer">{{fact}}</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        {{/admin}}
+
+    </script>
+    <div class="board_container" id="members">
+        <!-- <div class="board_div">
             <img class="board_pic" src="/images/icej.jpg" data-toggle="modal" data-target="#myModal">
             <h3>Raymond Lin</h3>
             <p>President</p>
@@ -56,7 +90,7 @@
             <img class="board_pic" src="/images/icej.jpg">
             <h3>Krystal Liu</h3>
             <p>Cultural Chair</p>
-        </div>
+        </div> -->
     </div>
     <br/>
     <h1 class="headers">Branch Members</h1>
@@ -75,7 +109,7 @@
     </div>
   
   <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -85,6 +119,7 @@
             <img class="modal_pic" src="/images/icej.jpg">
             <p class="modal_question">Major: <span class="modal_answer">Gender studies</span></p>
             <p class="modal_question">Year: <span class="modal_answer">Freshman</span></p>
+            <p class="modal_question">From: <span class="modal_answer">Paris, IL</span></p>
             <p class="modal_question">Why CLAID: <span class="modal_answer">I'm a munch</span></p>
             <p class="modal_question">Hobbies: <span class="modal_answer">Ice spice</span></p>
             <p class="modal_question">Fun fact: <span class="modal_answer">I play terraria</span></p>
@@ -94,6 +129,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>

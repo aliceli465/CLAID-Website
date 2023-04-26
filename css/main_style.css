@@ -35,6 +35,12 @@ h1.maintext {
     font-size:50px;
     margin-top: 230px;
 }
+h2.maintext {
+  text-align: center;
+  color: rgb(211, 92, 92);
+  font-size:50px;
+  margin-top: 150px;
+}
 
 p.maintext {
     margin-left:150px;
@@ -143,7 +149,7 @@ p.maintext {
   h3.headers {
     text-align: center;
     color: rgb(209, 76, 76);
-    font-size:20px;
+    font-size:17px;
   }
   .board_container {
     text-align: center;
