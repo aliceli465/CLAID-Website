@@ -138,11 +138,13 @@ p.maintext {
     text-align: center;
     color: rgb(209, 76, 76);
   }
-
-  .board_div {
+  .board_container {
     text-align: center;
+  }
+  .board_div {
+    margin: auto;
     display: inline-block;
-    margin-right: 100px;
+    padding: 10px 70px 0px;
   }
   .board_pic {
     border-radius: 50%;
