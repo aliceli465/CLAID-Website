@@ -17,6 +17,7 @@ li.nav a.nav {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
+    font-family: Comfortaa;
 }
 li.nav a.nav:hover {
     background-color: rgb(211, 92, 92);
@@ -53,11 +54,12 @@ p.maintext {
     width: 600px;
     margin-left: 150px;
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.25);
+    border-radius: 10px;
 }
 
 .contacttext {
     margin-left: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px 16px;
 }
 
@@ -73,4 +75,77 @@ p.maintext {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.25);
+    transition: 0.2s;
 }
+.contactbutton:hover {
+    transform: scale(1.1);
+}
+
+/*carousel*/
+.mainTextBackground {
+    width: 600px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    margin: auto;
+    bottom: 60px;
+    left: 440px;
+    position: absolute;
+  }
+  .mainText {
+    /*for the text*/
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-family: Comfortaa;
+  }
+
+  /*branch boxes*/
+  .container {
+    text-align: center;
+  }
+  .block {
+    margin-left: 220px;
+    display: inline-block;
+    width: 400px;
+    margin-right: 10px;
+    height: 250px;
+    border: 2px solid;
+    border-color: rgb(240, 238, 238);
+    transition: 0.2s;
+  }
+  .block:hover {
+    transform: scale(1.1);
+  }
+  .blocktext {
+    color: rgb(209, 76, 76);
+    text-align: center;
+    font-family: Comfortaa;
+    padding-top: 20px;
+    font-size: 32px;
+  }
+
+
+  /*board styling*/
+  .headers {
+    text-align: center;
+    color: rgb(209, 76, 76);
+  }
+  h3.headers {
+    text-align: center;
+    color: rgb(209, 76, 76);
+  }
+
+  .board_div {
+    text-align: center;
+    display: inline-block;
+    margin-right: 100px;
+  }
+  .board_pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
