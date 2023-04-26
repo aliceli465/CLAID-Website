@@ -116,6 +116,7 @@ p.maintext {
     border: 2px solid;
     border-color: rgb(240, 238, 238);
     transition: 0.2s;
+    cursor: pointer;
   }
   .block:hover {
     transform: scale(1.1);
@@ -128,6 +129,11 @@ p.maintext {
     font-size: 32px;
   }
 
+  /*branch modals*/
+
+  #branchModal {
+    font-family: Comfortaa;
+  }
 
   /*board styling*/
   .headers {
@@ -137,11 +143,13 @@ p.maintext {
   h3.headers {
     text-align: center;
     color: rgb(209, 76, 76);
+    font-size:20px;
   }
   .board_container {
     text-align: center;
   }
   .board_div {
+    cursor: pointer;
     margin: auto;
     display: inline-block;
     padding: 10px 70px 0px;
@@ -150,4 +158,22 @@ p.maintext {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+  }
+
+  /*modal*/
+
+  .modal_pic {
+    width: 250px;
+    height: 400px;
+    float:left;
+    padding-right:20px;
+    object-fit: cover;
+  }
+  .modal_question {
+    color: rgb(206, 59, 59);
+    font-size: 14px;
+  }
+  .modal_answer {
+    color: black;
+    font-size: 14px;
   }
