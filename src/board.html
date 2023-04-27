@@ -8,9 +8,8 @@
     <!--comfortaa font-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <!--bootstrap-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/node_modules/mustache/mustache.min.js"></script>
     <script type="text/javascript" src="/js/board.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
@@ -25,9 +24,10 @@
         <li class="nav"><a class="nav" href="connect.html">Connect</a></li>
     </ul>
     <br/>
-    <h1 class="headers">Executives</h1>
+    <h1 class="headers">Meet the board</h1>
     <h3 class="headers">Click each photo to learn more!</h3>
     <br/>
+
     <script type="text/x-mustache" id="boardTemplate">
         {{#admin}}
         <div class="board_div">
@@ -35,7 +35,6 @@
             <h3>{{name}}</h3>
             <p>{{position}}</p>
         </div>
-
         <div class="modal fade" id="{{netid}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -43,7 +42,7 @@
                   <h4 class="modal-title" style="text-align: center;"id="myModalLabel">Raymond Lin</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="modal_pic" src="/images/icej.jpg">
+                    <img class="modal_pic" src="{{image}}">
                     <p class="modal_question">Major: <span class="modal_answer">{{major}}</span></p>
                     <p class="modal_question">Year: <span class="modal_answer">{{year}}</span></p>
                     <p class="modal_question">From: <span class="modal_answer">{{from}}</span></p>
@@ -60,51 +59,6 @@
 
     </script>
     <div class="board_container" id="members">
-        <!-- <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg" data-toggle="modal" data-target="#myModal">
-            <h3>Raymond Lin</h3>
-            <p>President</p>
-        </div>
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Janice Jiang</h3>
-            <p>Vice President</p>
-        </div>
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Alice Li</h3>
-            <p>Social Chair</p>
-        </div>
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Talia Zhao</h3>
-            <p>Tutoring Chair</p>
-        </div>
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Amy Chen</h3>
-            <p>Performance Chair</p>
-        </div>
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Krystal Liu</h3>
-            <p>Cultural Chair</p>
-        </div> -->
-    </div>
-    <br/>
-    <h1 class="headers">Branch Members</h1>
-    <br/>
-    <div class="board_container">
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Joyce Li</h3>
-            <p>Social Branch</p>
-        </div>
-        <div class="board_div">
-            <img class="board_pic" src="/images/icej.jpg">
-            <h3>Adrian Lara</h3>
-            <p>Social Branch</p>
-        </div>
     </div>
   
   <!-- Modal -->

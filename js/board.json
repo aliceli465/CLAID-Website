@@ -10,7 +10,19 @@
             "hobbies": "terraria",
             "fact": "i like ice spice",
             "netid": "ray",
-            "image": "/images/raymond.png"
+            "image": "/images/icej.jpg"
+        },
+        {
+            "name": "Janice Jiang",
+            "position": "Vice President",
+            "major":"Gender Studies",
+            "from": "Paris, IL",
+            "year": "Junior",
+            "why": "I'm a munch",
+            "hobbies": "terraria",
+            "fact": "i like ice spice",
+            "netid": "ray",
+            "image": "/images/icej.jpg"
         }
     ]
 }
