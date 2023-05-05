@@ -153,6 +153,7 @@ p.maintext {
   }
   .board_container {
     text-align: center;
+    flex-wrap: wrap;
   }
   .board_div {
     cursor: pointer;
@@ -164,6 +165,7 @@ p.maintext {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    padding-bottom: 10px;
   }
 
   /*modal*/

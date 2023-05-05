@@ -1,5 +1,5 @@
 {
-    "admin": [
+    "values": [
         {
             "name": "Raymond Lin",
             "position": "President",
@@ -10,7 +10,7 @@
             "hobbies": "terraria",
             "fact": "i like ice spice",
             "netid": "ray",
-            "image": "/images/icej.jpg"
+            "image": "/images/board/raymond.png"
         },
         {
             "name": "Janice Jiang",
@@ -22,7 +22,43 @@
             "hobbies": "terraria",
             "fact": "i like ice spice",
             "netid": "janice",
-            "image": "/images/icej.jpg"
+            "image": "/images/board/icej.jpg"
+        },
+        {
+            "name": "Alice Li",
+            "position": "Social Chair",
+            "major":"Gender Studies",
+            "from": "Paris, IL",
+            "year": "Junior",
+            "why": "I'm a munch",
+            "hobbies": "terraria",
+            "fact": "i like ice spice",
+            "netid": "alice",
+            "image": "/images/board/icej.jpg"
+        },
+        {
+            "name": "Amy Chen",
+            "position": "Performance Chair",
+            "major":"Gender Studies",
+            "from": "Paris, IL",
+            "year": "Junior",
+            "why": "I'm a munch",
+            "hobbies": "terraria",
+            "fact": "i like ice spice",
+            "netid": "amy",
+            "image": "/images/board/icej.jpg"
+        },
+        {
+            "name": "Krystal Liu",
+            "position": "Cultural Chair",
+            "major":"Gender Studies",
+            "from": "Paris, IL",
+            "year": "Junior",
+            "why": "I'm a munch",
+            "hobbies": "terraria",
+            "fact": "i like ice spice",
+            "netid": "krystal",
+            "image": "/images/board/icej.jpg"
         }
     ]
 }

@@ -29,65 +29,33 @@
     <br/>
 
     <script type="text/x-mustache" id="boardTemplate">
-        {{#admin}}
         <div class="board_div">
             <img class="board_pic" src="{{image}}" data-bs-toggle="modal" data-bs-target="#{{netid}}">
             <h3>{{name}}</h3>
             <p>{{position}}</p>
         </div>
-        {{/admin}}
-    </script>
-    <script type="text/x-mustache" id="modalTemplate">
-      {{#admin}}
-      <div class="modal fade" id="{{netid}}">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">{{name}}</h4>
-            </div>
-            <div class="modal-body">
-                <img class="modal_pic" src="{{image}}">
-                <p class="modal_question">Major: <span class="modal_answer">{{major}}</span></p>
-                <p class="modal_question">Year: <span class="modal_answer">{{year}}</span></p>
-                <p class="modal_question">From: <span class="modal_answer">{{from}}</span></p>
-                <p class="modal_question">Why CLAID: <span class="modal_answer">{{why}}</span></p>
-                <p class="modal_question">Hobbies: <span class="modal_answer">{{hobbies}}</span></p>
-                <p class="modal_question">Fun fact: <span class="modal_answer">{{fact}}</span></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+        <div class="modal fade" id="{{netid}}">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">{{name}}</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="modal_pic" src="{{image}}">
+                  <p class="modal_question">Major: <span class="modal_answer">{{major}}</span></p>
+                  <p class="modal_question">Year: <span class="modal_answer">{{year}}</span></p>
+                  <p class="modal_question">From: <span class="modal_answer">{{from}}</span></p>
+                  <p class="modal_question">Why CLAID: <span class="modal_answer">{{why}}</span></p>
+                  <p class="modal_question">Hobbies: <span class="modal_answer">{{hobbies}}</span></p>
+                  <p class="modal_question">Fun fact: <span class="modal_answer">{{fact}}</span></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
-        </div>
-        {{/admin}}
     </script>
     <div class="board_container" id="members">
     </div>
-    <div id="modals">
-
-    </div>
-  
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" style="text-align: center;"id="myModalLabel">Raymond Lin</h4>
-        </div>
-        <div class="modal-body">
-            <img class="modal_pic" src="/images/icej.jpg">
-            <p class="modal_question">Major: <span class="modal_answer">Gender studies</span></p>
-            <p class="modal_question">Year: <span class="modal_answer">Freshman</span></p>
-            <p class="modal_question">From: <span class="modal_answer">Paris, IL</span></p>
-            <p class="modal_question">Why CLAID: <span class="modal_answer">I'm a munch</span></p>
-            <p class="modal_question">Hobbies: <span class="modal_answer">Ice spice</span></p>
-            <p class="modal_question">Fun fact: <span class="modal_answer">I play terraria</span></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
 </body>
 </html>
