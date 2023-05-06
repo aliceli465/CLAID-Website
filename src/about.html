@@ -37,19 +37,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/performance.png" alt="First slide">
-            </div>
-            <div class="carousel-item">
               <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/chinese corner.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/performance branch.png" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/mahjong.png" alt="Third slide">
+              <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/lantern2.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/boba.png" alt="Third slide">
+              <img class="d-block w-100" style="max-height:500px; width: auto; object-fit: cover;" src="/images/events/pizza.jpg" alt="Fourth slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#aboutUsCarousel" role="button" data-slide="prev">
@@ -76,28 +73,27 @@
     <br/>
     <br/>
     <!--branch boxes-->
-
     </div class="container">
-      <div class="block" data-toggle="modal" data-target="#branchModal">
+      <div class="block" data-toggle="modal" data-target="#socialModal">
         <h1 class="blocktext" >Social</h1>
+        
       </div>
-      <div class="block">
+      <div class="block" data-toggle="modal" data-target="#tutoringModal">
         <h1 class="blocktext">Tutoring</h1>
       </div>
     <div>
     <br/>
     </div class="container">
-      <div class="block">
+      <div class="block" data-toggle="modal" data-target="#performanceModal">
         <h1 class="blocktext">Performance</h1>
-      </div>
-      <div class="block">
+    </div>
+    <div class="block" data-toggle="modal" data-target="#culturalModal">
         <h1 class="blocktext">Cultural</h1>
-      </div>
-    <div>
+    </div>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="branchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <!-- Social Modal -->
+  <div class="modal fade branchModal" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -105,7 +101,6 @@
         </div>
         <div class="modal-body">
           <p style="text-align: center;">Welcome to Social branch! We serve as the bridge between all the branches and focus on creating a community through fun, club-wide events. Some of our most popular events include dumpling making, mahjong nights, game socials, food fundraisers, and various other activities like gingerbread-making during Christmas season.</p>
-        
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -113,6 +108,55 @@
       </div>
     </div>
   </div>
+  <!-- Tutoring Modal -->
+  <div class="modal fade branchModal" id="tutoringModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Tutoring Branch</h4>
+          </div>
+          <div class="modal-body"> 
+            <p style="text-align: center;">Welcome to Tutoring! We are in charge of overseeing our peer tutoring program as well as running Chinese Corner. We offer one-on-one tutoring to people of all skill levels, and pair them with our incredible tutor team! Additionally, we host weekly Chinese Corners where you can come practice your Chinese at our various conversation tables. We have a new theme each week, and it's a great way to practice as you're surrounded by other learners and our tutors!</p>           
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Performance Modal -->
+  <div class="modal fade branchModal" id="performanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Performance Branch</h4>
+        </div>
+        <div class="modal-body">  
+          <p style="text-align: center;">Welcome to Performance! We are in charge of hosting our annual Chinese New Year Showcase, and it features our very own dancers/choreographers as well as various other RSO's and their performances! From organizing showcase logistics, participating in dances, choreographing, and working with other RSO's, it's a really incredible experience.</p>        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cultural Modal -->
+  <div class="modal fade branchModal" id="culturalModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Cultural Branch</h4>
+          </div>
+          <div class="modal-body"> 
+            <p style="text-align: center;">Welcome to Cultural! We organize events with a focus on learning about the various aspects of Chinese Culture. From language to food to history to fashion, we want to make sure each person - regardless of ethnicity - can walk out of our events learning something new! Some events we host include the annual Mid-Autumn Festival, Calligraphy Workshops, and musical performances.</p>           
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
 </body>
 </html>

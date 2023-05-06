@@ -12,6 +12,7 @@
     <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/node_modules/mustache/mustache.min.js"></script>
     <script type="text/javascript" src="/js/board.js"></script>
+    <script type="text/javascript" src="/js/exec.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
 <body>
@@ -24,7 +25,7 @@
         <li class="nav"><a class="nav" href="connect.html">Connect</a></li>
     </ul>
     <br/>
-    <h1 class="headers">Meet the board</h1>
+    <h1 class="headers">Meet the board!</h1>
     <h3 class="headers">Click each photo to learn more!</h3>
     <br/>
 
@@ -32,7 +33,7 @@
         <div class="board_div">
             <img class="board_pic" src="{{image}}" data-bs-toggle="modal" data-bs-target="#{{netid}}">
             <h3>{{name}}</h3>
-            <p>{{position}}</p>
+            <p style="color: rgb(209, 76, 76);">{{position}}</p>
         </div>
         <div class="modal fade" id="{{netid}}">
           <div class="modal-dialog">
@@ -55,6 +56,10 @@
             </div>
           </div>
     </script>
+    <div class="board_container" id="exec">
+    </div>
+    <h1 class="headers">Branch Members</h1>
+    <br>
     <div class="board_container" id="members">
     </div>
 </body>

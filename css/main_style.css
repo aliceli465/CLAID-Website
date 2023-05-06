@@ -137,7 +137,7 @@ p.maintext {
 
   /*branch modals*/
 
-  #branchModal {
+  .branchModal {
     font-family: Comfortaa;
   }
 
@@ -145,6 +145,11 @@ p.maintext {
   .headers {
     text-align: center;
     color: rgb(209, 76, 76);
+  }
+  h1.headers {
+    text-align: center;
+    color: rgb(209, 76, 76);
+    font-size: 50px;
   }
   h3.headers {
     text-align: center;
@@ -157,15 +162,16 @@ p.maintext {
   }
   .board_div {
     cursor: pointer;
-    margin: auto;
     display: inline-block;
-    padding: 10px 70px 0px;
+    width: 300px;
+    padding-bottom: 10px;
   }
   .board_pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     padding-bottom: 10px;
+    object-fit: cover;
   }
 
   /*modal*/

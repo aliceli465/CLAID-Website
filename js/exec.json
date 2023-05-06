@@ -1,0 +1,76 @@
+{
+    "values": [
+        {
+            "name": "Raymond Lin",
+            "position": "President",
+            "major":"Economics and EALC",
+            "from": "Paris, IL",
+            "year": "Junior",
+            "why": "Growing up with a lack of understanding of my own culture, this club has helped me learn more about my own self-identity and understand the historical and social importance of Chinese traditions and culture",
+            "hobbies": "Roblox and Terraria",
+            "fact": "I prefer sweet things over salty",
+            "netid": "raymond",
+            "image": "/images/board/raymond.png"
+        },
+        {
+            "name": "Janice Jiang",
+            "position": "Vice President",
+            "major":"Accountancy",
+            "from": "Peoria, IL",
+            "year": "Junior",
+            "why": "I love the people in CLAID! I love being able to connect with students who share a passion for the Chinese language and culture.",
+            "hobbies": "Watching crime shows, Chinese TikTok, singing",
+            "fact": "I hate pickles",
+            "netid": "janice",
+            "image": "/images/board/janice.png"
+        },
+        {
+            "name": "Alice Li",
+            "position": "Social Chair",
+            "major":"Computer Science",
+            "from": "Peoria, IL",
+            "year": "Sophomore",
+            "why": "I love planning social events and love seeing the community we have built!",
+            "hobbies": "Drinking coffee, playing volleyball, losing in Valorant, and going to the gym!",
+            "fact": "I used to work at Starbucks and a boba shop!",
+            "netid": "alice",
+            "image": "/images/board/alice.png"
+        },
+        {
+            "name": "Amy Chen",
+            "position": "Performance Chair",
+            "major":"Actuarial Science and Economics",
+            "from": "Chicago, IL",
+            "year": "Senior",
+            "why": "I enjoy hosting events where both Chinese international and Chinese American students can meet and get to know each other!",
+            "hobbies": "Sleep, reading, baking, cooking, hanging out with friends",
+            "fact": "I think monkeys are little demons.",
+            "netid": "amy",
+            "image": "/images/board/amy.png"
+        },
+        {
+            "name": "Talia Zhao",
+            "position": "Tutoring Chair",
+            "major":"Psychology",
+            "from": "Beijing, China",
+            "year": "Senior",
+            "why": "I like teaching Chinese to other people, and I love the people!",
+            "hobbies": "🏸️🏐️📷🎧🎹🎫🍫🗺️",
+            "fact": "I guess you just have to find out after meeting me",
+            "netid": "talia",
+            "image": "/images/board/talia.png"
+        },
+        {
+            "name": "Krystal Liu",
+            "position": "Cultural Chair",
+            "major":"Actuarial Science",
+            "from": "Bay Area, CA",
+            "year": "Senior",
+            "why": "I'm here at CLAID because I enjoy bonding with everyone over Chinese culture, and love the community curated through mutual interest",
+            "hobbies": "Reading and listening to music",
+            "fact": "I never put aromatics in my cooking, nor do I ever eat them if it's in my food.",
+            "netid": "krystal",
+            "image": "/images/board/krystal.png"
+        }
+    ]
+}
