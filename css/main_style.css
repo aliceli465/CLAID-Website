@@ -128,7 +128,7 @@ p.maintext {
     transform: scale(1.1);
   }
   .blocktext {
-    color: rgb(209, 76, 76);
+    color: white;
     text-align: center;
     font-family: Comfortaa;
     padding-top: 20px;
@@ -250,7 +250,7 @@ form {
   transition: 0.2s;
 }
 .formbutton:hover {
-  transform: (1.1);
+  transform: scale(1.1);
 }
 
 textarea {

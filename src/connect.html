@@ -38,19 +38,19 @@
     <h2 class="headers">Or contact us here!</h2>
     <br>
     <div>
-        <form action="mailto:claiduiuc@gmail.com" method="post" enctype="text/plain">
+        <form role="form" action="https://formspree.io/f/mqkonnbr" method="POST" enctype="text/plain">
             <div style="display: flex; margin-left: 530px;">
                 <div style="padding-right: 50px;">
                     <p class="formtext" style="flex: 25%;"><label for="name">Name</label></p>
-                    <textarea id="name"></textarea>
+                    <textarea type="name" name="name"></textarea>
                 </div>
                 <div>
                     <p class="formtext" style="flex: 25%;"><label for="email">Email</label></p>
-                    <textarea id="email"></textarea>
+                    <textarea type="email" name="email"></textarea>
                 </div>
             </div>
             <p class="formtext" style="flex: 25%;"><label for="message">Message</label></p>
-            <textarea id="message" style="width: 500px; height: 200px; margin: auto;"></textarea>
+            <textarea id="message" style="width: 500px; height: 200px; margin: auto;" name="message"></textarea>
             <br>
             <br>
             <input type="submit" value="Submit" class="formbutton">
