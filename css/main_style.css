@@ -191,3 +191,69 @@ p.maintext {
     color: black;
     font-size: 14px;
   }
+
+
+/*connect page*/
+
+.connectdiv {
+  transition: 0.2s;
+}
+
+.connectdiv:hover {
+  transform: scale(1.2);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.formtext {
+  color: rgb(206, 59, 59);
+  font-size: 17px;
+}
+form {
+  text-align: center;
+}
+.formbutton {
+  background-color: rgb(211, 92, 92);
+  margin-left: 10px;
+  padding: 12px;
+  width:130px;
+  font-size:18px;
+  font-family: Comfortaa;
+  color:white;
+  border:0px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.25);
+  transition: 0.2s;
+}
+.formbutton:hover {
+  transform: (1.1);
+}
+
+textarea {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.25);
+}
