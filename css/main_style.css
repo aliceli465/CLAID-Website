@@ -257,3 +257,35 @@ textarea {
   border-radius: 10px;
   box-shadow: 0 2px 4px 1px rgba(0,0,0,0.25);
 }
+
+/*points*/
+
+#points-table {
+  border-collapse: collapse;
+  width: 40%;
+  border-radius: 10px;
+}
+
+#points-table td, #points-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#points-table tr:nth-child(even){background-color: #f2f2f2;}
+
+#points-table tr:hover {background-color: #ddd;}
+
+#points-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(211, 92, 92);
+  color: white;
+}
+
+.pointheader {
+  color: rgb(211, 92, 92);
+  font-size:50px;
+  margin-top: 50px;
+  text-align: center;
+}

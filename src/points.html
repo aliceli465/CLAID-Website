@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/main_style.css">
     <!--comfortaa font-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!--nav bar-->
@@ -18,5 +19,52 @@
         <li class="nav"><a class="nav" href="connect.html">Connect</a></li>
         <li class="nav"><a class="nav" href="points.html">Points</a></li>
     </ul>
+    <h2 class="pointheader">Check in!</h2>
+    <!--check in stuff-->
+    <div>
+        <form role="form" onsubmit="setTimeout(function(){window.location.reload();},10);">
+            <div style="display: flex; margin-left: 530px;">
+                <div style="padding-right: 50px;">
+                    <p class="formtext"><label for="name">Name</label></p>
+                    <textarea type="name" name="name"></textarea>
+                </div>
+                <div>
+                    <p class="formtext"><label for="email">Event code</label></p>
+                    <textarea type="email" name="email"></textarea>
+                </div>
+            </div>
+            <br>
+            <br>
+            <button type="submit" value="Submit" class="formbutton">Check In</button>
+        </form>
+    </div>
+
+
+    <h2 class="pointheader">Leaderboard</h2>
+    <!--table-->
+    <div>
+        <table id="points-table" style="margin-left: auto; margin-right: auto;">
+            <tr>
+              <th>Name</th>
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td>Alice</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Janice</td>
+              <td>9</td>
+            </tr>
+            <tr>
+                <td>Raymond</td>
+                <td>8</td>
+              </tr>
+          </table>
+    </div>
+
+    
+
+
 </body>
 </html>
