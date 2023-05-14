@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.4",
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "react": "^18.2.0"
   }
 }
