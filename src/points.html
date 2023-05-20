@@ -22,19 +22,19 @@
     <h2 class="pointheader">Check in!</h2>
     <!--check in stuff-->
     <div>
-        <form role="form" onsubmit="setTimeout(function(){window.location.reload();},10);">
+        <form action="checkin.php" method="POST">
             <div style="display: flex; margin-left: 430px;">
                 <div style="padding-right: 50px;">
-                    <p class="formtext"><label for="name">First Name</label></p>
-                    <textarea type="name" name="name"></textarea>
+                    <p class="formtext"><label for="firstname">First Name</label></p>
+                    <input type="text" name="firstname" id="firstname" style="border-radius: 6px">
                 </div>
                 <div style="padding-right: 50px;">
-                    <p class="formtext"><label for="name">Last Name</label></p>
-                    <textarea type="name" name="name"></textarea>
+                    <p class="formtext"><label for="lastname">Last Name</label></p>
+                    <input type="text" name="lastname" id="lastname" style="border-radius: 6px">
                 </div>
                 <div>
-                    <p class="formtext"><label for="email">Event code</label></p>
-                    <textarea type="email" name="email"></textarea>
+                    <p class="formtext"><label for="eventcode">Event code</label></p>
+                    <input type="text" name="eventcode" id="eventcode" style="border-radius: 6px">
                 </div>
             </div>
             <br>
