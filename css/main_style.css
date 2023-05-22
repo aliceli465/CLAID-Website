@@ -23,7 +23,19 @@ li.nav a.nav:hover {
     background-color: rgb(211, 92, 92);
     color: white;
 }
+/* footer */
 
+footer{ 
+  background-color: rgb(209, 111, 111);
+  height: 80px;
+}
+.ftext {
+  color: white;
+  font-family: Comfortaa;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
 /*BODY*/
 body {
     font-family: Comfortaa;
