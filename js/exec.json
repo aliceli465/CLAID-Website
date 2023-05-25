@@ -10,7 +10,8 @@
             "hobbies": "Roblox and Terraria",
             "fact": "I prefer sweet things over salty",
             "netid": "raymond",
-            "image": "/images/board/raymond.png"
+            "image": "/images/board/raymond.png",
+            "email": "rtlin2@illinois.edu"
         },
         {
             "name": "Janice Jiang",
@@ -22,7 +23,8 @@
             "hobbies": "Watching crime shows, Chinese TikTok, singing",
             "fact": "I hate pickles",
             "netid": "janice",
-            "image": "/images/board/janice.png"
+            "image": "/images/board/janice.png",
+            "email": "jjiang53@illinois.edu"
         },
         {
             "name": "Alice Li",
@@ -34,7 +36,8 @@
             "hobbies": "Drinking coffee, playing volleyball, losing in Valorant, and going to the gym!",
             "fact": "I used to work at Starbucks and a boba shop!",
             "netid": "alice",
-            "image": "/images/board/alice.png"
+            "image": "/images/board/alice.png",
+            "email": "aliceyl2@illinois.edu"
         },
         {
             "name": "Amy Chen",
@@ -46,7 +49,8 @@
             "hobbies": "Sleep, reading, baking, cooking, hanging out with friends",
             "fact": "I think monkeys are little demons.",
             "netid": "amy",
-            "image": "/images/board/amy.png"
+            "image": "/images/board/amy.png",
+            "email": "achen77@illinois.edu"
         },
         {
             "name": "Talia Zhao",
@@ -58,7 +62,8 @@
             "hobbies": "🏸️🏐️📷🎧🎹🎫🍫🗺️",
             "fact": "I guess you just have to find out after meeting me",
             "netid": "talia",
-            "image": "/images/board/talia.png"
+            "image": "/images/board/talia.png",
+            "email": "tyzhao2@illinois.edu"
         },
         {
             "name": "Krystal Liu",
@@ -70,7 +75,8 @@
             "hobbies": "Reading and listening to music",
             "fact": "I never put aromatics in my cooking, nor do I ever eat them if it's in my food.",
             "netid": "krystal",
-            "image": "/images/board/krystal.png"
+            "image": "/images/board/krystal.png",
+            "email": "kl45@illinois.edu"
         }
     ]
 }

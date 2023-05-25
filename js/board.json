@@ -10,7 +10,8 @@
             "hobbies": "I like to read, I play video games, and I like to skate.",
             "fact": "I'm not good at skating :(",
             "netid": "adrian",
-            "image": "/images/board/adrian.png"
+            "image": "/images/board/adrian.png",
+            "email": "adrian11@illinois.edu"
         },
         {
             "name": "Jonathan Wen",
@@ -22,7 +23,8 @@
             "hobbies": "I enjoy listening to music/playing ukulele, and making balloon animals",
             "fact": "I am also president of the balloon animal club",
             "netid": "jon",
-            "image": "/images/board/jon.png"
+            "image": "/images/board/jon.png",
+            "email": "wen19@illinois.edu"
         },
         {
             "name": "Allen Chiu",
@@ -34,7 +36,8 @@
             "hobbies": "Gacha games, Anime, getting into crocheting",
             "fact": "I have a mold of my teeth at home",
             "netid": "allen",
-            "image": "/images/board/aleln.png"
+            "image": "/images/board/aleln.png",
+            "email": "ac115@illinois.edu"
         },
         {
             "name": "Jerry Shi",
@@ -46,7 +49,8 @@
             "hobbies": "Soccer, Basketball, Cooking",
             "fact": "My favorite color is orange",
             "netid": "jerry",
-            "image": "/images/board/jerry.png"
+            "image": "/images/board/jerry.png",
+            "email": "jerryjs2@illinois.edu"
         },
         {
             "name": "Katelyn Li",
@@ -58,7 +62,8 @@
             "hobbies": "Playing piano and clarinet and independent writing; also really like playing video games",
             "fact": "I like to make food and baked goods",
             "netid": "katie",
-            "image": "/images/board/katie.png"
+            "image": "/images/board/katie.png",
+            "email": "kl38@illinois.edu"
         },
         {
             "name": "Chelsea He-Chen",
@@ -70,7 +75,8 @@
             "hobbies": "One of my hobbies is tying different Chinese knots",
             "fact": "I was born in Silicon Valley!",
             "netid": "chelsea",
-            "image": "/images/board/chelsea.png"
+            "image": "/images/board/chelsea.png",
+            "email": "chechen2@illinois.edu"
         },
         {
             "name": "MJ",
@@ -82,7 +88,8 @@
             "hobbies": "Coffee!",
             "fact": "I play bass!",
             "netid": "mj",
-            "image": "/images/board/mj.png"
+            "image": "/images/board/mj.png",
+            "email": "mj47@illinois.edu"
         },
         {
             "name": "Karen Xiong",
@@ -94,7 +101,8 @@
             "hobbies": "I enjoy reading, traveling, doing puzzles, and playing video games.",
             "fact": "I play the violin and piano.",
             "netid": "karen",
-            "image": "/images/board/karen.png"
+            "image": "/images/board/karen.png",
+            "email": "karenhx2@illinois.edu"
         },
         {
             "name": "Joyce Li",
@@ -106,7 +114,8 @@
             "hobbies": "I like to drink coffee, play volleyball, and work out!",
             "fact": "I used to be a Starbucks barista!",
             "netid": "joyce",
-            "image": "/images/board/joyce.png"
+            "image": "/images/board/joyce.png",
+            "email": "jli318@illinois.edu"
         }
     ]
 }
