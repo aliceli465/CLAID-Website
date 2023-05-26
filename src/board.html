@@ -34,7 +34,12 @@
         <div class="board_div">
             <img class="board_pic" src="{{image}}" data-bs-toggle="modal" data-bs-target="#{{netid}}">
             <h3>{{name}}</h3>
-            <p style="color: rgb(209, 76, 76);">{{position}}</p>
+            <div id="board_title_box">
+              <p id="board_title">{{position}}</p>
+              <a href="mailto:{{email}}" target="_blank">
+                <img id="board_email" src="/images/miscellaneous/email_black.png">
+              </a>
+            </div>
         </div>
         <div class="modal fade" id="{{netid}}">
           <div class="modal-dialog">
