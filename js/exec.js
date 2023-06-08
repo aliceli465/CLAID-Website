@@ -1,5 +1,3 @@
-import $ from '/node_modules/jquery/dist/jquery.js';
-import Mustache from '/node_modules/mustache/mustache.js';
 $(document).ready(function() {
     $.getJSON("/js/exec.json", function(data) {
         var size = Object.keys(data.values).length;
