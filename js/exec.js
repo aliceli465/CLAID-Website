@@ -1,3 +1,5 @@
+import $ from 'jquery';
+import Mustache from 'mustache';
 $(document).ready(function() {
     $.getJSON("/js/exec.json", function(data) {
         var size = Object.keys(data.values).length;
