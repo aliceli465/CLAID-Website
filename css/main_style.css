@@ -175,7 +175,7 @@ p.maintext {
   .board_div {
     cursor: pointer;
     display: inline-block;
-    width: 300px;
+    width: 350px;
     padding-bottom: 10px;
   }
   .board_pic {
