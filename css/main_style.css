@@ -317,3 +317,64 @@ textarea {
   margin-top: 50px;
   text-align: center;
 }
+
+
+/*get involved page*/
+.rowhehe {
+  display: flex;
+  height: 400px;
+}
+
+.col1 {
+  flex: 70%;
+}
+
+img.col1 {
+  height:400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.col2 {
+  flex: 30%;
+  background-color: rgb(209, 111, 111);
+  text-align: center;
+  color: white;
+}
+
+.getinvolvedbox {
+  height: 400px;
+  width: 300px;
+  margin-left: 125px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.innerbox {
+  width: 350px;
+  height: 350px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color:rgb(190, 123, 123);
+  color: rgb(209,111,111);
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+img.innerbox {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: none;
+  margin-top: 20px;
+}
+
+.innerbox:hover {
+  transform: scale(1.05);
+}
+a {
+  text-decoration: none;
+}
