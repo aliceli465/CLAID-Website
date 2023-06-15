@@ -23,7 +23,7 @@
     <h2 class="pointheader">Check in!</h2>
     <!--check in stuff-->
     <div>
-        <form action="checkin.php" method="POST">
+        <form>
             <div style="display: flex; margin-left: 425px;">
                 <div style="padding-right: 50px;">
                     <p class="formtext"><label for="firstname">First Name</label></p>
@@ -40,7 +40,12 @@
             </div>
             <br>
             <br>
-            <button type="submit" value="Submit" class="formbutton">Check In</button>
+            <button type="submit" value="Submit" class="formbutton" onclick="errorMessage()">Check In</button>
+            <script>
+                function errorMessage() {
+                  alert("Check in was unsuccessful");
+                }
+            </script>
         </form>
     </div>
 
