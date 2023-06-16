@@ -19,19 +19,18 @@
         <li class="nav"><a class="nav" href="connect.html">Connect</a></li>
         <li class="nav"><a class="nav" href="points.html">Points</a></li>
     </ul>
-    <h2 class="pointheader">THIS PAGE IS STILL IN WORK</h2>
     <h2 class="pointheader">Check in!</h2>
     <!--check in stuff-->
     <div>
-        <form>
+        <form action="form.js" method="PUT">
             <div style="display: flex; margin-left: 425px;">
                 <div style="padding-right: 50px;">
-                    <p class="formtext"><label for="firstname">First Name</label></p>
-                    <input type="text" name="firstname" id="firstname" style="border-radius: 6px">
+                    <p class="formtext"><label for="name">Name</label></p>
+                    <input type="text" name="name" id="name" style="border-radius: 6px">
                 </div>
                 <div style="padding-right: 50px;">
-                    <p class="formtext"><label for="lastname">Last Name</label></p>
-                    <input type="text" name="lastname" id="lastname" style="border-radius: 6px">
+                    <p class="formtext"><label for="email">Email</label></p>
+                    <input type="text" name="email" id="email" style="border-radius: 6px">
                 </div>
                 <div>
                     <p class="formtext"><label for="eventcode">Event code</label></p>
@@ -40,12 +39,7 @@
             </div>
             <br>
             <br>
-            <button type="submit" value="Submit" class="formbutton" onclick="errorMessage()">Check In</button>
-            <script>
-                function errorMessage() {
-                  alert("Check in was unsuccessful");
-                }
-            </script>
+            <button type="submit" value="Submit" class="formbutton">Check In</button>
         </form>
     </div>
 
