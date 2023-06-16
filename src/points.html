@@ -22,7 +22,8 @@
     <h2 class="pointheader">Check in!</h2>
     <!--check in stuff-->
     <div>
-        <form action="form.js" method="PUT">
+        <!--<form action="form.js" method="PUT">-->
+        <form>
             <div style="display: flex; margin-left: 425px;">
                 <div style="padding-right: 50px;">
                     <p class="formtext"><label for="name">Name</label></p>
@@ -39,7 +40,13 @@
             </div>
             <br>
             <br>
-            <button type="submit" value="Submit" class="formbutton">Check In</button>
+            <button type="submit" value="Submit" class="formbutton"  onclick="errormessage()">Check In</button>
+            <script>
+                function errormessage() {
+                    alert("Check in was unsuccessful");
+                    location.reload();
+                }
+            </script>
         </form>
     </div>
 
