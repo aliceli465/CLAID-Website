@@ -22,8 +22,11 @@ function main() {
                 //success
                 alert("Check in was successful! (˶ᵔ ᵕ ᵔ˶) ");
             }
-            else{
+            if(result === "Event code is invalid"){
                 alert("Invalid event code!");
+            }
+            else {
+                alert("Could not connect to database :(");
             }
         })
         .catch(error => {
