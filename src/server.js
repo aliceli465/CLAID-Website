@@ -55,7 +55,7 @@ app.post('/checkin', async (req, res) => {
 
 */
 async function checkUserExists(client, email) {
-    const collection = client.getDatabase('CLAID_DB').getCollection('users');
+    const collection = client.db('CLAID_DB').collection('users');
     const user = await collection.findOne({ email:email });
     if(user) {
         return true;
@@ -66,7 +66,7 @@ async function checkUserExists(client, email) {
 }
 
 async function checkEventExists(client, event_code) {
-    const collection = client.getDatabase('CLAID_DB').getCollection('events');
+    const collection = client.db('CLAID_DB').collection('events');
     const event = await collection.findOne({ event_code:event_code });
     if(event) {
         return true;
@@ -77,7 +77,7 @@ async function checkEventExists(client, event_code) {
 }
 
 async function checkAlreadyCheckedIn(client, email, event_code) {
-    const collection = client.getDatabase('CLAID_DB').getCollection('users');
+    const collection = client.db('CLAID_DB').collection('users');
     const user = await collection.findOne({ email: email, events: {$in: [event_code] } });
     if(user) {
         return true;
@@ -96,12 +96,12 @@ async function createUser(client, name, email, event_code) {
         events: [event_code],
         points: points
     }
-    client.getDatabase('CLAID_DB').getCollection('users').insertOne(newUser);
+    client.db('CLAID_DB').collection('users').insertOne(newUser);
 }
 
 async function updateUser(client, email, event_code) {
     const points_to_add = getEventPoints(client, event_code);
-    client.getDatabase('CLAID_DB').getCollection('users').updateOne(
+    client.db('CLAID_DB').collection('users').updateOne(
         { email: email },
         { 
             $inc: {points, points_to_add}, 
@@ -111,7 +111,7 @@ async function updateUser(client, email, event_code) {
 }
 
 async function getEventPoints(client, event_code) {
-    const event = await client.getDatabase('CLAID_DB').getCollection('events').findOne({ event_code : event_code});
+    const event = await client.db('CLAID_DB').collection('events').findOne({ event_code : event_code});
     if(event) {
         return event.points;
     }
