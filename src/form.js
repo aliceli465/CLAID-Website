@@ -81,23 +81,17 @@ async function getEventPoints(client, event_code) {
     }
 }
 
-function main() {
-    //PROCESS THE FORM HERE
-    const form = document.querySelector('#check_in');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const data = new FormData(form);
-        const name = data.get('name');
-        const email = data.get('email');
-        const event_code = data.get('eventcode');
+(async function() {
+    const { MongoClient } = require('mongodb');
+    require('dotenv').config();
+    const uri = process.env.MONGODB_URI;
+    const client = new MongoClient(uri);
 
-        //MONGODB STUFF HERE
-        try {
-            const { MongoClient } = require('mongodb');
-            require('dotenv').config();
-            const uri = process.env.MONGODB_URI;
-            const client = new MongoClient(uri);
-           if(checkEventExists(client, event_code)) {
+    try {
+        await client.connect();
+
+        function main() {
+            if(checkEventExists(client, event_code)) {
                 //if user already exists
                 if(checkUserExists(client, email)) {
                     //if user has not checked in already
@@ -118,13 +112,58 @@ function main() {
                 location.reload();
            }
         }
-        finally {
-            alert("Failure to connect to database");
-            client.close();
-        }
+        document.addEventListener('DOMContentLoaded', main);
+    } catch (error) {
+        alert("Couldn't connect to database :(");
+    }
+    client.close();
+})();
 
-        form.reset();
-    });
-}
 
-document.addEventListener('DOMContentLoaded', main);
+// function main() {
+//     //PROCESS THE FORM HERE
+//     const form = document.querySelector('#check_in');
+//     form.addEventListener('submit', function(event) {
+//         event.preventDefault();
+//         const data = new FormData(form);
+//         const name = data.get('name');
+//         const email = data.get('email');
+//         const event_code = data.get('eventcode');
+
+//         //MONGODB STUFF HERE
+//         try {
+//             const { MongoClient } = require('mongodb');
+//             require('dotenv').config();
+//             const uri = process.env.MONGODB_URI;
+//             const client = new MongoClient(uri);
+//            if(checkEventExists(client, event_code)) {
+//                 //if user already exists
+//                 if(checkUserExists(client, email)) {
+//                     //if user has not checked in already
+//                     if(!checkAlreadyCheckedIn(client, email, event_code)){
+//                         updateUser(client, email, event_code);
+//                     }
+//                 }
+//                 //if user is new
+//                 else{
+//                     createUser(client, name, email, event_code);
+//                 }
+//                 alert("Check in was successful!");
+//                 location.reload();
+//            }
+//            else{
+//                 //return javascript pop up that event code is invalid
+//                 alert("Event code is invalid");
+//                 location.reload();
+//            }
+//         }
+//         finally {
+//             alert("Failure to connect to database");
+//             client.close();
+//         }
+
+//         form.reset
+//     });
+// }
+
+// document.addEventListener('DOMContentLoaded', main);
