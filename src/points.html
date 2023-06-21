@@ -12,7 +12,7 @@
 <body>
     <!--nav bar-->
     <ul class="nav">
-        <li class="nav" style="margin-left:130px"><a class="nav" href="index.html">Home</a></li>
+        <li class="nav" style="margin-left:130px"><a class="nav" href="/index.html">Home</a></li>
         <li class="nav"><a class="nav" href="about.html">About Us</a></li>
         <li class="nav"><a class="nav" href="board.html">Board</a></li>
         <li class="nav"><a class="nav" href="get_involved.html">Get Involved</a></li>
@@ -21,20 +21,21 @@
     </ul>
     <h2 class="pointheader">Check in!</h2>
     <!--check in stuff-->
+    
     <div>
-        <form action="checkin.php" method="POST">
-            <div style="display: flex; margin-left: 430px;">
+        <form id="check_in">
+            <div style="display: flex; margin-left: 425px;">
                 <div style="padding-right: 50px;">
-                    <p class="formtext"><label for="firstname">First Name</label></p>
-                    <input type="text" name="firstname" id="firstname" style="border-radius: 6px">
+                    <p class="formtext"><label for="name">Name</label></p>
+                    <input type="text" name="name" id="name" style="border-radius: 6px" required>
                 </div>
                 <div style="padding-right: 50px;">
-                    <p class="formtext"><label for="lastname">Last Name</label></p>
-                    <input type="text" name="lastname" id="lastname" style="border-radius: 6px">
+                    <p class="formtext"><label for="email">Email</label></p>
+                    <input type="text" name="email" id="email" style="border-radius: 6px" required>
                 </div>
                 <div>
                     <p class="formtext"><label for="eventcode">Event code</label></p>
-                    <input type="text" name="eventcode" id="eventcode" style="border-radius: 6px">
+                    <input type="text" name="eventcode" id="eventcode" style="border-radius: 6px" required>
                 </div>
             </div>
             <br>
@@ -67,11 +68,15 @@
           </table>
     </div>
 
+    <br>
+    <br>
     
     <footer>
         <p class="ftext" style="float:left;">claid @ uiuc</p>
         <p class="ftext" style="float:right; margin-right: 30px;">Contact Us</p>
     </footer>
 
+    <!--client side js code-->
+    <script src="form.js"></script>
 </body>
 </html>
