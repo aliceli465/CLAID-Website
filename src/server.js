@@ -11,7 +11,7 @@ app.use(express.json());
 //req = request, res = response.
 app.post('/checkin', async (req, res) => {
     const {name, email, event_code} = req.body;
-
+    updateLeaderboard();
     try {
         await client.connect();
         //if event exists
@@ -21,6 +21,7 @@ app.post('/checkin', async (req, res) => {
                 //if user has not checked in already
                 if(!(await checkAlreadyCheckedIn(client, email, event_code))){
                     await updateUser(client, email, event_code);
+                    await updateLeaderboard();
                 }
             }
             //if user is new
@@ -118,4 +119,34 @@ async function getEventPoints(client, event_code) {
     else{
         return 0;
     }
+}
+
+async function updateLeaderboard(client) {
+    const collection = client.db('CLAID_DB').collection('users');
+    db.collection.find().sort({points:-1}).limit(3)
+    .toArray((err, topUsers) => {
+        if(err) {
+            const row = document.createElement('tr');
+            const cell1 = document.createElement('td');
+            cell1.textContent = "No users yet!";
+            const cell2 = document.createElement('td');
+            cell2.textContent = "No points submitted yet!";
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            table.appendChild(row);
+        }
+        const leaderboard = document.getElementById("points-table");
+
+        topUsers.forEach(user => {
+            const row = document.createElement('tr');
+            const cell1 = document.createElement('td');
+            cell1.textContent = user.name;
+            const cell2 = document.createElement('td');
+            cell2.textContent = user.points;
+            row.appendChild(cell1);
+            row.appendChild(cell2);
+            table.appendChild(row);
+        });
+        client.close();
+    });
 }
