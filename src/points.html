@@ -43,46 +43,7 @@
             <button type="submit" value="Submit" class="formbutton">Check In</button>
         </form>
     </div>
-
-    <!--
-        to pull the three highest values, use
-        db.collection.find().sort({points:-1}).limit(3)
-        as this will find and return the three highest users
-        
-        since we are appending childs, we have to clear the table each time
-        and then add each of the children on there
-        
-        const collection = client.db('CLAID_DB').collection('users');
-        db.collection.find().sort({points:-1}).limit(3)
-        .toArray((err, topUsers) => {
-            if(err) {
-                const row = document.createElement('tr');
-                const cell1 = document.createElement('td');
-                cell1.textContent = "No users yet!";
-                const cell2 = document.createElement('td');
-                cell2.textContent = "No points submitted yet!";
-                row.appendChild(cell1);
-                row.appendChild(cell2);
-                table.appendChild(row);
-            }
-            const leaderboard = document.getElementById("points-table");
-
-
-            
-            topUsers.forEach(user => {
-                const row = document.createElement('tr');
-                const cell1 = document.createElement('td');
-                cell1.textContent = user.name;
-                const cell2 = document.createElement('td');
-                cell2.textContent = user.points;
-                row.appendChild(cell1);
-                row.appendChild(cell2);
-                table.appendChild(row);
-
-            });
-            client.close();
-        });
-    -->
+    
     <h2 class="pointheader">Leaderboard</h2>
     <!--table-->
     <div>

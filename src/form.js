@@ -18,11 +18,11 @@ function main() {
         })
         .then(response => response.text())
         .then(result => {
-            if(result === "Check in was successful!") {
+            if(result === "success") {
                 //success
                 alert("Check in was successful! (˶ᵔ ᵕ ᵔ˶) ");
             }
-            if(result === "Event code is invalid"){
+            if(result === "invalid"){
                 alert("Invalid event code!");
             }
             else {
