@@ -18,6 +18,8 @@ router.post('/', async (req, res) => {
             }
         });
 
+        await client.connect();
+
         const userExists = await checkUserExists(client, email);
         const eventExists = await checkEventExists(client, event_code);
         const alreadyCheckedIn = await checkAlreadyCheckedIn(client, email, event_code);
@@ -37,6 +39,8 @@ router.post('/', async (req, res) => {
         else{
             res.send("invalid");
         }
+
+        await client.close();
     } catch (error) {
         res.send("failure")
     }

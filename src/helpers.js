@@ -1,7 +1,5 @@
-const {MongoClient } = require('mongodb');
+const {MongoClient} = require('mongodb');
 require('dotenv').config();
-
-const uri = process.env.MONGODB_URI;
 
 async function checkUserExists(client, email) {
     const collection = client.db('CLAID_DB').collection('users');
