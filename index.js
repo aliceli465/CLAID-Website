@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const checkinRouter = require('./routs/checkin');
+const checkinRouter = require('./routes/checkin');
 
 app.use('/checkin', checkinRouter);
 
