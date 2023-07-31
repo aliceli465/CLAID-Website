@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const { checkUserExists, checkEventExists, checkAlreadyCheckedIn, createUser, updateUser, getEventPoints } = require('../helpers');
+const { checkUserExists, checkEventExists, checkAlreadyCheckedIn, createUser, updateUser, getEventPoints } = require('./src/helpers.js');
 const uri = process.env.MONGODB_URI;
 
 router.post('/', async (req, res) => {
@@ -36,6 +36,7 @@ router.post('/', async (req, res) => {
             }
             res.send("success")
         }
+        //event does not exist
         else{
             res.send("invalid");
         }

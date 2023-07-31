@@ -22,7 +22,7 @@ function main() {
                 //success
                 alert("Check in was successful! (˶ᵔ ᵕ ᵔ˶) ");
             }
-            if(result === "invalid"){
+            else if(result === "invalid"){
                 alert("Invalid event code!");
             }
             else {

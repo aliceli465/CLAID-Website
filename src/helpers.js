@@ -36,22 +36,24 @@ async function checkAlreadyCheckedIn(client, email, event_code) {
 
 async function createUser(client, name, email, event_code) {
     //find number of points to insert
-    const points = getEventPoints(client, event_code);
+    const points = await getEventPoints(client, event_code);
+    const parsedPoints = parseInt(points,10);
     const newUser = {
         name: name,
         email: email,
         events: [event_code],
-        points: points
+        points: parsedPoints
     }
-    client.db('CLAID_DB').collection('users').insertOne(newUser);
+    await client.db('CLAID_DB').collection('users').insertOne(newUser);
 }
 
 async function updateUser(client, email, event_code) {
-    const points_to_add = getEventPoints(client, event_code);
-    client.db('CLAID_DB').collection('users').updateOne(
+    const points_to_add = await getEventPoints(client, event_code);
+    const parsedPoints = parseInt(points_to_add, 10);
+    await client.db('CLAID_DB').collection('users').updateOne(
         { email: email },
         { 
-            $inc: {points, points_to_add}, 
+            $inc: {points: parsedPoints}, 
             $push: {events: event_code}
         }
     );
