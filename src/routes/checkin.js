@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const { checkUserExists, checkEventExists, checkAlreadyCheckedIn, createUser, updateUser, getEventPoints } = require('./src/helpers.js');
+const { checkUserExists, checkEventExists, checkAlreadyCheckedIn, createUser, updateUser, getEventPoints } = require('../helpers');
 const uri = process.env.MONGODB_URI;
 
 router.post('/', async (req, res) => {
