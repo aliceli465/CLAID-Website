@@ -1,3 +1,5 @@
+const multer = require('multer');
+const upload = multer();
 const express = require('express');
 const router = express.Router();
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -5,7 +7,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const { checkUserExists, checkEventExists, checkAlreadyCheckedIn, createUser, updateUser, getEventPoints } = require('../helpers');
 const uri = process.env.MONGODB_URI;
 
-router.post('/', async (req, res) => {
+router.post('/', upload.none(), async (req, res) => {
     try {
         const { name, email, event_code } = req.body;
 
@@ -30,6 +32,9 @@ router.post('/', async (req, res) => {
                     await updateUser(client, email, event_code);
                     //update leader board here
                 }
+                else{
+                    res.send("already checked in");
+                }
             }
             else{
                 await createUser(client, name, email, event_code);
@@ -38,7 +43,7 @@ router.post('/', async (req, res) => {
         }
         //event does not exist
         else{
-            res.send("invalid");
+            res.send("invalid event code");
         }
 
         await client.close();

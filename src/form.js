@@ -12,9 +12,9 @@ function main() {
         fetch('/checkin', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'multipart/form-data'
             },
-            body: JSON.stringify({name, email, event_code})
+            body: data
         })
         .then(response => response.text())
         .then(result => {
@@ -22,7 +22,10 @@ function main() {
                 //success
                 alert("Check in was successful! (˶ᵔ ᵕ ᵔ˶) ");
             }
-            else if(result === "invalid"){
+            else if(result === "already checked in") {
+                alert("You have already checked into this event!");
+            }
+            else if(result === "invalid event code"){
                 alert("Invalid event code!");
             }
             else {
