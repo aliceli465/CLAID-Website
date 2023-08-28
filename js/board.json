@@ -116,6 +116,19 @@
             "netid": "joyce",
             "image": "/images/board pt2/joyce.png",
             "email": "jli318@illinois.edu"
+        },
+        {
+            "name": "Ming Yi",
+            "position": "Performance Branch",
+            "major":"Computer Engineering",
+            "from": "Chicago, IL",
+            "year": "Senior",
+            "why": " I enjoy meeting new people, learning about the culture, and performing!",
+            "hobbies": "Basketball, badminton, and hiking!",
+            "fact": "I would take dessert over an actual meal :P",
+            "netid": "ming",
+            "image": "/images/board pt2/ming.png",
+            "email": "myi22@illinois.edu"
         }
     ]
 }
