@@ -77,6 +77,19 @@
             "netid": "krystal",
             "image": "/images/board pt2/krystal.png",
             "email": "kl45@illinois.edu"
+        },
+        {
+            "name": "Jerry Shi",
+            "position": "Treasurer",
+            "major":"Psychology",
+            "from": "Bloomington, IL",
+            "year": "Senior",
+            "why": "I wanted to learn more about my cultural heritage",
+            "hobbies": "Soccer, Basketball, Cooking",
+            "fact": "My favorite color is orange",
+            "netid": "jerry",
+            "image": "/images/board pt2/jerry.png",
+            "email": "jerryjs2@illinois.edu"
         }
     ]
 }
